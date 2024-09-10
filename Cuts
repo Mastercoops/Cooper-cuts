@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenBlades Lawn Care</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            background-color: #333;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            padding: 14px 20px;
+            color: white;
+            background-color: #333;
+        }
+        nav ul li a:hover {
+            background-color: #4CAF50;
+        }
+        .container {
+            padding: 20px;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .service {
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            flex: 1;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .booking-form {
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .booking-form input, .booking-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+        .booking-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .booking-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to GreenBlades Lawn Care</h1>
+    <p>Your lawn, our care</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#booking">Booking</a></li>
+    </ul>
+</nav>
+
+<div class="container" id="home">
+    <h2>About GreenBlades Lawn Care</h2>
+    <p>GreenBlades Lawn Care provides professional lawn mowing and gardening services in Birkdale, Brisbane. We take pride in keeping your lawn looking its best year-round. Call us today for a free quote!</p>
+</div>
+
+<div class="container" id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Lawn Mowing</h3>
+            <p>Professional lawn mowing services starting at $30.</p>
+        </div>
+        <div class="service">
+            <h3>Garden Maintenance</h3>
+            <p>Weeding, trimming, and more to keep your garden fresh and tidy.</p>
+        </div>
+        <div class="service">
+            <h3>Hedge Trimming</h3>
+            <p>Expert hedge trimming services to shape and maintain your hedges.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="booking">
+    <h2>Book a Service</h2>
+    <form class="booking-form">
+        <h3>Schedule Your Lawn Care Service</h3>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="service">Choose a Service</label>
+        <select id="service" name="service" required>
+            <option value="lawn-mowing">Lawn Mowing</option>
+            <option value="garden-maintenance">Garden Maintenance</option>
+            <option value="hedge-trimming">Hedge Trimming</option>
+        </select>
+
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="message">Additional Information</label>
+        <textarea id="message" name="message" placeholder="Any special instructions?" rows="4"></textarea>
+
+        <button type="submit">Submit Booking</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2024 GreenBlades Lawn Care. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
